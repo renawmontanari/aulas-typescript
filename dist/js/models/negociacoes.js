@@ -1,5 +1,6 @@
 export class Negociacoes {
     constructor() {
+        // Forma verbosa Array<Negociacao>
         this.negociacoes = [];
     }
     adiciona(negociacao) {
