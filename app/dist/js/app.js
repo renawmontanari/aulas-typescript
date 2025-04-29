@@ -1,6 +1,4 @@
 import { NegociacaoController } from "./controllers/negociacao-controller.js";
-import { Negociacoes } from "./models/negociacoes.js";
-import { NegociacoesView } from "./views/negociacoes-view.js";
 const controller = new NegociacaoController();
 const form = document.querySelector(".form");
 if (form) {
@@ -12,7 +10,3 @@ if (form) {
 else {
     throw Error("Não foi possível inicializar a aplicação. Verifique se o form existe.");
 }
-const negociacoes = new Negociacoes();
-const negociacoesView = new NegociacoesView("#negociacoesView");
-const template = negociacoesView.template(negociacoes);
-console.log(template);
