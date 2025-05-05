@@ -41,6 +41,10 @@ export class NegociacaoController {
     this.atualizaView();
   }
 
+  importarDados(): void {
+    alert("oi");
+  }
+
   private ehDiaUtil(data: Date) {
     return (
       data.getDay() > DiasDaSemana.DOMINGO &&
